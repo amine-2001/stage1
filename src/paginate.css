@@ -1,0 +1,116 @@
+/* thead {
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    background-color:#F6F9FC;
+}
+
+tbody {
+    text-align: center;
+} */
+
+.search {
+    width: 60%;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    border: 1px solid #ccc
+}
+
+.rdt_TableHeader {
+    margin-top: -50px
+}
+
+.rdt_TableCol_Sortable {
+    color: #8898aa;
+    font-size: 10px;
+}
+
+.rdt_TableCol {
+    color: #8898aa;
+    background-color: #f6f9fc;
+    border-color: #e9ecef;
+    font-weight: 600;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 0.8125rem;
+    white-space: nowrap;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.rdt_TableCell {
+    color: #525f7f;
+}
+
+
+.buttonExplorer {
+    background-color: #87B87F;
+    border-radius: 5px;
+}
+
+.buttonStatistique {
+    background-color: #DDA0DD;
+    border-radius: 5px;
+}
+
+.buttonModifier {
+    background-color: #337AB7;
+    border-radius: 5px;
+}
+
+.buttonSupprimer {
+    background-color: #D9534F;
+    border-radius: 5px;
+}
+
+.buttSupprimer {
+    background-color: #D9534F;
+    border-radius: 5px;
+}
+
+.reactSelect {
+    width: 150px;
+}
+
+.hvr-shrink {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-shrink:hover,
+.hvr-shrink:focus,
+.hvr-shrink:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.react-datepicker__input-container {
+    border: none !important;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    border-radius: 5px;
+    border: solid 1px #B3B3B3
+}

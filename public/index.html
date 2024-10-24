@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!-- Bootstrap Core CSS -->
+  <link href="%PUBLIC_URL%/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Menu CSS -->
+  <link href="%PUBLIC_URL%/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+  <link href="%PUBLIC_URL%/bower_components/nestable/nestable.css" rel="stylesheet" type="text/css" />
+  <!-- Menu CSS -->
+  <link href="%PUBLIC_URL%/bower_components/morrisjs/morris.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>HOODA App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhL4D_X4dhl-AW1E9HvG2k657SdqOEwEA&libraries=places"></script> -->
+
+<script src="https://kit.fontawesome.com/aceae07441.js" crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="%PUBLIC_URL%/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="%PUBLIC_URL%/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Menu Plugin JavaScript -->
+<script src="%PUBLIC_URL%/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+<!--Nice scroll JavaScript -->
+<script src="%PUBLIC_URL%/js/jquery.nicescroll.js"></script>
+<!--Morris JavaScript -->
+<script src="%PUBLIC_URL%/bower_components/raphael/raphael-min.js"></script>
+<script src="%PUBLIC_URL%/bower_components/morrisjs/morris.js"></script>
+<!--Wave Effects -->
+<script src="%PUBLIC_URL%/js/waves.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="%PUBLIC_URL%/js/myadmin.js"></script>
+<script src="%PUBLIC_URL%/bower_components/nestable/jquery.nestable.js"></script>
+<script src="%PUBLIC_URL%/js/dashboard1.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    // Nestable
+    var updateOutput = function (e) {
+      var list = e.length ? e : $(e.target),
+        output = list.data('output');
+      if (window.JSON) {
+        output.val(window.JSON.stringify(list.nestable('serialize')));//, null, 2));
+      } else {
+        output.val('JSON browser support required for this demo.');
+      }
+    };
+
+    $('#nestable').nestable({ group: 1 }).on('change', updateOutput);
+    updateOutput($('#nestable').data('output', $('#nestable-output')));
+
+    $('#nestable1').nestable({ group: 2 }).on('change', updateOutput);
+    updateOutput($('#nestable1').data('output', $('#nestable-output')));
+
+    $('#nestable2').nestable({ group: 3 }).on('change', updateOutput);
+    updateOutput($('#nestable2').data('output', $('#nestable-output')));
+
+  });
+</script>
+</body>
+
+</html>
